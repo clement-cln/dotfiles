@@ -1,0 +1,93 @@
+{
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.activeBackground1": "#878580",
+        "editorIndentGuide.background1": "#343331"
+    },
+    "files.associations": {
+        "*.gotmpl": "helm"
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "keep",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
+    "yaml.customTags": [
+        "!reference sequence"
+    ],
+    "[helm]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    //Editor  
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.rulers": [
+            79
+        ],
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    //Pythonpath  
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.venvFolders": [
+        ".cache/pypoetry/virtualenvs"
+    ],
+    //Black  
+    "black-formatter.args": [
+        "--line-length",
+        "79"
+    ],
+    "black-formatter.path": [
+        "/home/clement/.local/bin/black"
+    ],
+    //Isort 
+    "isort.args": [
+        "--lines-between-types",
+        "1",
+        "--lines-after-imports",
+        "2",
+        "--line-length",
+        "79",
+        "--multi-line",
+        "3",
+        "--trailing-comma"
+    ],
+    //File exclusion
+    "files.exclude": {
+        "__pycache__": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
+    "editor.largeFileOptimizations": false,
+    "editor.stickyScroll.enabled": true,
+    "workbench.colorTheme": "Ayu Dark Bordered",
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "disabled",
+        "vscode-kubernetes.minikube-path-linux": "/home/clement/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "colorize.languages": [
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg",
+        "yaml"
+    ]
+}

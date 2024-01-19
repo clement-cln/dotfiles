@@ -1,0 +1,14 @@
+{
+	"windowPosition": [
+		54,
+		1107
+	],
+	"windowSize": [
+		1866,
+		1053
+	],
+	"hyper": {
+		"plugins": "{\"plugins\":[\"hyper-ayu\"],\"localPlugins\":[]}",
+		"plugin-versions": "[[\"hyper-ayu\",\"1.1.0\"]]"
+	}
+}
