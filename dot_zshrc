@@ -7,6 +7,11 @@ eval "$(pyenv virtualenv-init -)"
 # Go setup
 export PATH=$PATH:/usr/local/go/bin
 
+# Brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -159,9 +164,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # I'm so clumsy
 alias celar="echo door"
 
@@ -213,3 +215,16 @@ function init-scraping(){
     export PROVIDER_CREDENTIALS=$(cat conf/provider_credentials.json)
     export SOURCE=$1
 }
+
+docker() {
+  case $1 in
+    ps)
+      shift
+      command dops "$@"
+      ;;
+    *)
+      command docker "$@";;
+  esac
+}
+export MODULAR_HOME="/home/clement/.modular"
+export PATH="/home/clement/.modular/pkg/packages.modular.com_mojo/bin:$PATH"

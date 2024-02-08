@@ -38,8 +38,6 @@
         },
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    //Pythonpath  
-    "python.defaultInterpreterPath": "/usr/bin/python3",
     "python.venvFolders": [
         ".cache/pypoetry/virtualenvs"
     ],
@@ -71,13 +69,12 @@
     },
     "editor.largeFileOptimizations": false,
     "editor.stickyScroll.enabled": true,
-    "workbench.colorTheme": "Ayu Dark Bordered",
     "vs-kubernetes": {
         "vs-kubernetes.crd-code-completion": "disabled",
-        "vscode-kubernetes.minikube-path-linux": "/home/clement/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+        "vscode-kubernetes.minikube-path-linux": "/home/clement/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vs-kubernetes.ignore-recommendations": true
     },
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.iconTheme": "material-icon-theme",
     "colorize.languages": [
         "css",
         "sass",
@@ -89,5 +86,7 @@
         "xml",
         "svg",
         "yaml"
-    ]
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Celestial"
 }
