@@ -5,7 +5,9 @@
         "editorIndentGuide.background1": "#343331"
     },
     "files.associations": {
-        "*.gotmpl": "helm"
+        "*.gotmpl": "helm",
+        "docker-compose*.yml": "dockercompose",
+        "helmfile.yaml": "helm"
     },
     "[yaml]": {
         "editor.insertSpaces": true,
@@ -88,5 +90,7 @@
         "yaml"
     ],
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Celestial"
+    "workbench.colorTheme": "Celestial",
+    "codesnap.transparentBackground": true,
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 5px 30px"
 }

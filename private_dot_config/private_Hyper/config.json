@@ -1,11 +1,11 @@
 {
 	"windowPosition": [
-		54,
-		1107
+		64,
+		1112
 	],
 	"windowSize": [
-		1866,
-		1053
+		928,
+		1048
 	],
 	"hyper": {
 		"plugins": "{\"plugins\":[\"hyper-ayu\"],\"localPlugins\":[]}",
