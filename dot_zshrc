@@ -91,6 +91,7 @@ plugins=(
   ubuntu
   vscode
   zsh-autosuggestions
+  zsh-syntax-highlighting
   poetry
 )
 
@@ -145,7 +146,6 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 
 ################################### python ####################################
-
 # Pyenv setup
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -242,23 +242,5 @@ docker() {
   esac
 }
 
-#################################### misc #####################################
-function init-scraping(){
-    if [[ -z $1 ]]; then
-        echo "No source passed"
-        exit 1
-    fi
-
-    # docker compose down
-    # docker ps -aq | xargs -n 1 docker stop &>/dev/null
-    # docker ps -aq | xargs -n 1 docker rm &>/dev/null
-
-    export PROJECT_CONFIG=$(cat conf/project_config.yml)
-    export PROVIDER_CREDENTIALS=$(cat conf/provider_credentials.json)
-    export SOURCE=$1
-    export DEBUG=True
-}
-
-function copy-task-tag() {
-    git branch --show-current | sed 's/\//\-/g' | c
-}
+#################################### local ####################################
+source ~/.zshrc.local
