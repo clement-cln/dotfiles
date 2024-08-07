@@ -1,7 +1,13 @@
+##################################### gtk #####################################
 export GTK_THEME=Adwaita-dark # Add the following to /etc/environment without the export statement if dark theme is not enforced
 
-################################## oh-my-zsh ##################################
+#################################### pyenv ####################################
+# Pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
+################################## oh-my-zsh ##################################
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -148,11 +154,6 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 
 ################################### python ####################################
-# Pyenv setup
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # helper functions
 function clean-path-name(){
     echo ${1//\//-}
