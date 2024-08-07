@@ -177,6 +177,9 @@ label:focus {
 #pulseaudio.muted {
   background-color: #3D3D3E;
 }
+#pulseaudio.source-muted {
+  color: #F09483;
+}
 
 #wireplumber {
   background-color: #fff0f5;

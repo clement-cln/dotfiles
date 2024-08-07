@@ -15,13 +15,10 @@
     "sway/scratchpad",
     "tray",
     "custom/media",
-    "custom/kubernetes", 
+    "custom/kubernetes",
     "mpd"
   ],
-  "modules-center": [
-    "sway/window",
-    "clock"
-  ],
+  "modules-center": ["sway/window", "clock"],
   "modules-right": [
     "cpu",
     "memory",
@@ -32,6 +29,7 @@
     "network",
     "privacy",
     "pulseaudio",
+    "bluetooth",
     "backlight",
     "power-profiles-daemon",
     "battery",
@@ -216,12 +214,22 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-wifi": "{essid} ",
     "format-ethernet": "{ipaddr}/{cidr} 󰈁",
-    "tooltip-format": "{ifname} via {gwaddr} 󱂇",
+    "tooltip-format": "{ifname} via {gwaddr} 󱂇 ({signalStrength}%)",
     "format-linked": "{ifname} (No IP) 󱦂",
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+  "bluetooth": {
+    "format": "",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
@@ -229,7 +237,7 @@
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
+    "format-source": "",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -255,7 +263,7 @@
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
   "custom/kubernetes": {
-    "interval": 0.1,
+    "interval": 1,
     "format": "{}",
     "return-type": "json",
     "max-length": 40,
