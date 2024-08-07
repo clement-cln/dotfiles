@@ -95,7 +95,7 @@ symbol = " "
 
 [kubernetes]
 format = 'on [$context \($namespace\)](purple) '
-disabled = false
+disabled = true
 detect_files = ['values.yaml.gotmpl', 'helmfile.yaml', 'Chart.yaml']
 
 [lua]
@@ -136,7 +136,8 @@ Debian = " "
 DragonFly = " "
 Emscripten = " "
 #EndeavourOS = " "
-EndeavourOS = "🪼"
+# EndeavourOS = "🪼"
+EndeavourOS = "🐙"
 Fedora = " "
 FreeBSD = " "
 Garuda = "󰛓 "

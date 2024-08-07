@@ -1,3 +1,5 @@
+export GTK_THEME=Adwaita-dark # Add the following to /etc/environment without the export statement if dark theme is not enforced
+
 ################################## oh-my-zsh ##################################
 
 # If you come from bash you might have to change your $PATH.
