@@ -59,6 +59,7 @@ window {
 
 #entry {
   background-color: #2A2A2Cff;
+  margin: 10px;
 }
 
 #entry:selected {
