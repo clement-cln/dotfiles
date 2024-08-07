@@ -1,0 +1,72 @@
+* {
+  font-family: "Cantarell", monospace;
+  font-size: 14px;
+}
+
+window {
+  margin: 0px;
+  border: 2px solid #f9d0afff;
+  border-radius: 5px;
+  background-color: #0b0c0f;
+}
+
+#input {
+  margin: 5px;
+  border: 1px solid #0b0c0fff;
+  color: #f2e9e1;
+  background-color: #2A2A2Cff;
+}
+
+#input image {
+  color: #f2e9e1;
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: #2A2A2Cff;
+  animation: fadeIn 0.2s ease-in-out both;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: #0b0c0f;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: #f2e9e1;
+  animation: fadeIn 0.2s ease-in-out both;
+}
+
+#entry {
+  background-color: #2A2A2Cff;
+}
+
+#entry:selected {
+  background-color: #f9d0afff;
+  font-weight: normal;
+}
+
+#text:selected {
+  background-color: #f9d0afff;
+  font-weight: normal;
+}
