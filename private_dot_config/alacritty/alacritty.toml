@@ -50,7 +50,7 @@ normal = {family = "MesloLGS Nerd Font Mono", style = "Regular"}
   black   = '#5E5C64'
   # red     = '#F09483'
   # green   = '#61ffca'
-  # yellow  = '#EA9D34'
+  yellow  = '#9B7054'
   # blue    = '#2A7BDE'
   # magenta = '#C061CB'
   # cyan    = '#286983'

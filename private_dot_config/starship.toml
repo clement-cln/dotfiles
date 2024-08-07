@@ -172,6 +172,7 @@ Windows = "󰍲 "
 
 [package]
 symbol = "󰏗 "
+style = "dimmed yellow bold"
 
 [perl]
 symbol = " "
