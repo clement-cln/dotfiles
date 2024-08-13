@@ -19,15 +19,6 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-  background-color: transparent;
-}
-window#waybar.solo {
-  background-color: #f2e9e1;
-}
-*/
-
 window#waybar.termite {
   background-color: #3f3f3f;
 }
@@ -80,28 +71,21 @@ button:hover {
   color: #c4a7e7;
 }
 
-#mode {
-  background-color: inherit;
-  box-shadow: inset 0 -3px #f2e9e1;
-}
-
+#hyprland-workspaces,
+#custom-media,
 #clock,
-#battery,
+#network,
 #cpu,
 #memory,
 #disk,
 #temperature,
-#backlight,
-#network,
+#privacy,
 #pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
+#bluetooth,
+#backlight,
 #power-profiles-daemon,
-#mpd {
+#battery,
+#custom-power {
   padding: 0 10px;
   color: #f2e9e1;
 }
@@ -130,8 +114,7 @@ button:hover {
   background-color: #e95378;
 }
 
-#battery.charging,
-#battery.plugged {
+#battery.charging {
   color: #f2e9e1;
   background-color: #1ea071;
 }
@@ -144,6 +127,10 @@ button:hover {
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.warning:not(.charging) {
+  background-color: #F09483;
+}
+
 #battery.critical:not(.charging) {
   background-color: #e95378;
   color: #f2e9e1;
@@ -181,15 +168,6 @@ label:focus {
   color: #F09483;
 }
 
-#wireplumber {
-  background-color: #fff0f5;
-  color: #0b0c0f;
-}
-
-#wireplumber.muted {
-  background-color: #e95378;
-}
-
 #custom-media {
   background-color: #66cc99;
   color: #2a5c45;
@@ -202,69 +180,6 @@ label:focus {
 
 #custom-media.custom-vlc {
   background-color: #ffa000;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
-  background-color: #e95378;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #e95378;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
-}
-
-#language {
-  background: #00b093;
-  color: #740864;
-  padding: 0 5px;
-  margin: 0 5px;
-  min-width: 16px;
-}
-
-#keyboard-state {
-  background: #97e1ad;
-  color: #0b0c0f;
-  padding: 0 0px;
-  margin: 0 5px;
-  min-width: 16px;
-}
-
-#keyboard-state > label {
-  padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-  background-color: transparent;
 }
 
 #privacy {
