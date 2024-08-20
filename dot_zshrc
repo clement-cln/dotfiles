@@ -147,7 +147,7 @@ alias kctx="kubectx"
 export KUBE_EDITOR='code --wait'
 
 # xclip
-alias c="xclip -selection clipboard"
+alias to-clip="xclip -selection clipboard"
 
 # zoxide
 eval "$(zoxide init zsh)"
