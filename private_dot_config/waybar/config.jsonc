@@ -38,7 +38,6 @@
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
-    "warp-on-scroll": false,
     "format": "{icon}",
     "format-icons": {
       "default": "",
@@ -48,11 +47,10 @@
       "4": "4",
       "5": "5",
       "urgent": "",
-      "focused": ""
-    }
-  },
-  "sway/mode": {
-    "format": "<span style=\"italic\">{}</span>"
+      "active": "",
+      "special": "󰽷"
+    },
+    "show-special": true
   },
   "clock": {
     // "timezone": "America/New_York",
