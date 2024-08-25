@@ -1,0 +1,66 @@
+#################################### brew #####################################
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+################################### antigen ###################################
+# Activate antigen
+source /opt/homebrew/share/antigen/antigen.zsh
+
+# Use OMZ repo
+antigen use oh-my-zsh
+
+# Add plugins
+antigen bundle git
+#antigen bundle docker
+antigen bundle docker-compose
+antigen bundle fzf
+antigen bundle gcloud
+antigen bundle golang
+#antigen bundle helm
+antigen bundle kubectl
+#antigen bundle kubectl-autocomplete
+antigen bundle kubectx
+antigen bundle pip
+#antigen bundle pyenv
+antigen bundle python
+antigen bundle vscode
+
+# Add syntax highlight and suggestion
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Antigen apply
+antigen apply
+
+#################################### shell ####################################
+# Starship
+eval "$(starship init zsh)"
+
+# I'm so clumsy
+alias celar="echo door"
+
+# k8s config
+alias k="kubectl"
+alias kctx="kubectx"
+export KUBE_EDITOR='code --wait'
+
+# xclip
+alias c="xclip -selection clipboard"
+
+# zoxide
+eval "$(zoxide init zsh)"
+alias cd="z"
+
+# codium
+alias code="codium"
+
+#################################### node #####################################
+# config nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+################################### python ####################################
+# config pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
