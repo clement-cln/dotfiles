@@ -229,6 +229,12 @@ label:focus {
   background-color: #3e8fb0;
 }
 
+/* Docker */
+#custom-docker {
+  color: #3e8fb0;
+  padding-left: 100px;
+}
+
 /* Kubernetes */
 #custom-kubernetes {
   color: #c4a7e7;

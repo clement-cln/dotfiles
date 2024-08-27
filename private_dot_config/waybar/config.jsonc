@@ -13,6 +13,7 @@
     "custom/logo",
     "hyprland/workspaces",
     "custom/media",
+    "custom/docker",
     "custom/kubernetes"
   ],
   "modules-center": ["clock"],
@@ -210,5 +211,14 @@
     "return-type": "json",
     "max-length": 40,
     "exec": "$HOME/.config/waybar/custom/kubernetes.sh 2> /dev/null"
+  },
+  "custom/docker": {
+    "interval": 1,
+    "format": "{} 󰡨",
+    "return-type": "json",
+    "max-length": 40,
+    "tooltip": true,
+    "hide-empty-text": true,
+    "exec": "$HOME/.config/waybar/custom/docker.sh 2> /dev/null"
   }
 }
