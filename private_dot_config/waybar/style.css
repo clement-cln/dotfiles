@@ -232,11 +232,11 @@ label:focus {
 /* Docker */
 #custom-docker {
   color: #3e8fb0;
-  padding-left: 100px;
+  padding-left: 40px;
 }
 
 /* Kubernetes */
 #custom-kubernetes {
   color: #c4a7e7;
-  padding-left: 100px;
+  padding-left: 40px;
 }
