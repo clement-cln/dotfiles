@@ -60,9 +60,23 @@
     "show-special": true
   },
   "clock": {
-    // "timezone": "America/New_York",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "timezone": "Europe/Paris",
+    "format": "{:%H:%M}",
+    "format-alt": "󰃭  {:%Y-%m-%d}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#3e8fb0'><b>{}</b></span>",
+        "days": "<span color='#5e5e5e'><b>{}</b></span>",
+        "weeks": "",
+        "weekdays": "<span color='#c4a7e7'><b>{}</b></span>",
+        "today": "<span color='#f2e9e1'><b><u>{}</u></b></span>"
+      }
+    }
   },
   "cpu": {
     "interval": "0.1",
@@ -155,7 +169,7 @@
     ]
   },
   "network": {
-    "interval":1,
+    "interval": 1,
     "format-wifi": "{icon}",
     "format-ethernet": "󰈁",
     "tooltip-format": "{essid} ({signalStrength}%)\n{bandwidthUpOctets}  {bandwidthDownOctets}\n{ifname} via {gwaddr} 󱂇",
