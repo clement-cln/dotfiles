@@ -112,12 +112,12 @@ button:hover {
 /* Battery */
 #battery {
   padding: 0 12px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 #battery.charging {
   color: #f2e9e1;
   background-color: #1ea071;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 @keyframes blink {

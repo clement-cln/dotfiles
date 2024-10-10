@@ -138,13 +138,11 @@ eval "$(starship init zsh)"
 # nvm
 source /usr/share/nvm/init-nvm.sh
 
+# Yarn global bin
+export PATH="$(yarn global bin):$PATH"
+
 # I'm so clumsy
 alias celar="echo door"
-
-# k8s config
-alias k="kubectl"
-alias kctx="kubectx"
-export KUBE_EDITOR='code --wait'
 
 # xclip
 alias to-clip="xclip -selection clipboard"
@@ -152,6 +150,18 @@ alias to-clip="xclip -selection clipboard"
 # zoxide
 eval "$(zoxide init zsh)"
 alias cd="z"
+
+# OSX like file explorer command
+function open(){
+    nohup nautilus $1 >/dev/null 2>&1 &
+}
+
+################################# kubernetes ##################################
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+alias k="kubectl"
+alias kctx="kubectx"
+export KUBE_EDITOR='code --wait'
 
 ################################### python ####################################
 # helper functions
@@ -196,7 +206,7 @@ function venv-delete(){
 }
 
 # Poetry util
-function fix-poetry-lock(){
+function poetry-fix-lock(){
     if [[ ! -d $1 ]]; then
         echo "No folder passed as argument"
         return 1
