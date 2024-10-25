@@ -255,5 +255,23 @@ docker() {
   esac
 }
 
+##################################### git #####################################
+function git-list-untracked() {
+    git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}"
+}
+
+function git-remove-untracked(){
+    case $1 in
+    -f)
+        shift
+        git_branch_arg="-D"
+        ;;
+    *)
+        git_branch_arg="-d";;
+    esac
+
+    git-list-untracked | xargs git branch $git_branch_arg
+}
+
 #################################### local ####################################
 source ~/.zshrc.local

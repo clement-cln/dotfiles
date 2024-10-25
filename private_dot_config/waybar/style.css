@@ -12,7 +12,7 @@ window#waybar {
   color: #f2e9e1;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 window#waybar.hidden {
@@ -112,8 +112,8 @@ button:hover {
 /* Battery */
 #battery {
   padding: 0 12px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  /* border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; */
 }
 #battery.charging {
   color: #f2e9e1;
@@ -182,7 +182,7 @@ label:focus {
   background-color: #111111;
 }
 #pulseaudio.source-muted {
-  color: #f09483;
+  color: #e95378;
 }
 
 /* Network */

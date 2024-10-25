@@ -11,9 +11,27 @@ window {
 }
 
 #input {
-  margin: 5px;
-  border: 1px solid #0b0c0fff;
   color: #f2e9e1;
+  border: 1px solid #0b0c0fff;
+  
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+  background-color: #2A2A2Cff;
+}
+
+#input:focus {
+  color: #f2e9e1;
+  border: 1px solid #0b0c0fff;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  box-shadow: none;
   background-color: #2A2A2Cff;
 }
 
@@ -60,14 +78,21 @@ window {
 #entry {
   background-color: #2A2A2Cff;
   margin: 10px;
+  border-radius: 5px;
+}
+
+#entry:focus {
+  background: rgb(249, 208, 175);
+  color: rgb(11, 12, 15);
 }
 
 #entry:selected {
-  background-color: #f9d0afff;
-  font-weight: normal;
+  background: rgb(249, 208, 175);
+  color: rgb(11, 12, 15);
 }
 
 #text:selected {
-  background-color: #f9d0afff;
-  font-weight: normal;
+  background: rgb(249, 208, 175);
+  color: rgb(11, 12, 15);
+
 }
