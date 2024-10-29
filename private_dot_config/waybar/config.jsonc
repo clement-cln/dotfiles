@@ -53,9 +53,9 @@
       "8": "8",
       "9": "9",
       "0": "0",
-      "urgent": "",
-      "active": "",
-      "special": "󰽷"
+      "urgent": "<span size='x-small'></span>",
+      "active": "<span size='x-small'></span>",
+      "special": "<span size='x-large'>󰽷</span>"
     },
     "show-special": true
   },
@@ -84,7 +84,7 @@
       "warning": 80,
       "critical": 90
     },
-    "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11} <span size='120%'></span>",
+    "format": "<span size='small'></span> {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     "tooltip": true
   },
@@ -94,7 +94,7 @@
       "critical": 90
     },
     "unit": "GB",
-    "format": "{percentage}% <span size='120%'></span>",
+    "format": "<span size='small'></span> {percentage}%",
     "tooltip": true,
     "tooltip-format": "{used:0.1f}G/{total:0.1f}G "
   },
@@ -103,7 +103,7 @@
       "warning": 80,
       "critical": 90
     },
-    "format": "{specific_free:0.1f}GB 󰋊",
+    "format": "󰋊 {specific_free:0.1f}GB",
     "unit": "GB",
     "tooltip": true
   },
@@ -115,7 +115,7 @@
     "tooltip": true
   },
   "backlight": {
-    "format": "{icon}",
+    "format": "<span size='small'>{icon}</span>",
     "format-icons": ["", "", "", "", "", "", "", "", ""],
     "tooltip": false
   },
@@ -127,8 +127,8 @@
       "critical": 15
     },
     "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
+    "format-charging": "{capacity}% <span size='small'></span>",
+    "format-plugged": "{capacity}% <span size='small'></span>",
     "format-full": "{icon}",
     "format-alt": "{time} {icon}",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
@@ -136,7 +136,7 @@
     "tooltip-format": "{timeTo}"
   },
   "power-profiles-daemon": {
-    "format": "{icon}",
+    "format": "<span size='x-small'>{icon}</span>",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
@@ -170,7 +170,7 @@
   },
   "network": {
     "interval": 1,
-    "format-wifi": "{icon}",
+    "format-wifi": "<span size='small'>{icon}</span>",
     "format-ethernet": "󰈁",
     "tooltip-format": "{essid} ({signalStrength}%)\n{bandwidthUpOctets}  {bandwidthDownOctets}\n{ifname} via {gwaddr} 󱂇",
     "format-linked": "{ifname} (No IP) 󱦂",
@@ -195,8 +195,8 @@
     "orientation": "vertical"
   },
   "pulseaudio": {
-    "format": "{format_source}",
-    "format-bluetooth": "{icon} {format_source}",
+    "format": "<span size='small'>{format_source}</span>",
+    "format-bluetooth": "<span size='small'>{icon} {format_source}</span>",
     "format-bluetooth-muted": "{icon} {format_source}",
     "format-muted": "",
     "format-source": "",
@@ -234,8 +234,7 @@
   },
   "custom/docker": {
     "interval": 1,
-    // "format": "{} ",
-    "format": "{}  <span size='120%'></span>",
+    "format": "<span size='small'></span> {}",
     "return-type": "json",
     "max-length": 40,
     "tooltip": true,

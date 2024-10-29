@@ -13,7 +13,7 @@ decorations = "None"
 
 [font]
 size = 10
-normal = {family = "MesloLGS Nerd Font Mono", style = "Regular"}
+normal = {family = "MesloLGS Nerd Font Propo", style = "Regular"}
 
 [colors]
   [colors.primary]

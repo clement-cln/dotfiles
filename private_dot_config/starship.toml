@@ -43,7 +43,7 @@ symbol = " "
 disabled = true
 
 [git_branch]
-symbol = " "
+# symbol = " "
 style = "bold green"
 
 [git_commit]
@@ -120,7 +120,8 @@ symbol = " "
 symbol = " "
 
 [os]
-format = "$symbol "
+format = "[$symbol]($style) "
+style = "red"
 disabled = false
 
 [os.symbols]
@@ -137,8 +138,14 @@ DragonFly = " "
 Emscripten = " "
 #EndeavourOS = " "
 # EndeavourOS = "🪼"
+# EndeavourOS = " "
+# EndeavourOS = ""
+# EndeavourOS = "󱥒"
+# EndeavourOS = ""
+# EndeavourOS = "󰆦"
 # EndeavourOS = "🪷"
 EndeavourOS = "🐙"
+# EndeavourOS = "󰀶"
 Fedora = " "
 FreeBSD = " "
 Garuda = "󰛓 "
@@ -204,6 +211,7 @@ symbol = " "
 
 [terraform]
 format = '[$symbol\($version\) $workspace]($style) '
+symbol = "󱁢 "
 detect_folders = ['terraform', '.terraform']
 
 [zig]

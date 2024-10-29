@@ -1,7 +1,7 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: Cantarell, MesloLGS Nerd Font Mono;
-  font-size: 15px;
+  font-family: Cantarell, MesloLGS Nerd Font Propo;
+  font-size: 14px;
 }
 
 /* Waybar */
@@ -93,7 +93,6 @@ button:hover {
   padding-right: 7px;
   padding-left: 7px;
   margin-left: 5px;
-  font-size: 1.4em;
   border-radius: 8px 0px 0px 8px;
   color: #c4a7e7;
 }
@@ -175,9 +174,6 @@ label:focus {
   background-color: #66cc99;
 }
 
-#pulseaudio {
-  font-size: 1.3em;
-}
 #pulseaudio.muted {
   background-color: #111111;
 }
@@ -186,16 +182,8 @@ label:focus {
 }
 
 /* Network */
-#network {
-  font-size: 1.3em;
-}
 #network.disconnected {
   background-color: #e95378;
-}
-
-/* Bluetooth */
-#bluetooth {
-  font-size: 0.9em;
 }
 
 /* Custom */
