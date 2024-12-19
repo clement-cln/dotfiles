@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/rose-pine.toml"]
+# import = ["~/.config/alacritty/rose-pine.toml"]
 live_config_reload = true
 
 [window]
@@ -28,33 +28,33 @@ normal = {family = "MesloLGS Nerd Font Propo", style = "Regular"}
   [colors.normal]
   black   = '#0B0C0F'
   red     = '#E95378'
-  # green   = '#1EA071'
-  # yellow  = '#F6C177'
-  # blue    = '#1555A5'
-  # magenta = '#A347BA'
-  # cyan    = '#3E8FB0'
+  green   = '#1EA071'
+  yellow  = '#F6C177'
+  blue    = '#1555A5'
+  magenta = '#A347BA'
+  cyan    = '#3E8FB0'
   white   = '#edecee'
 
   # Bright colors
   [colors.bright]
   black   = '#5E5C64'
-  # red     = '#F09483'
-  # green   = '#61ffca'
-  # yellow  = '#EA9D34'
-  # blue    = '#2A7BDE'
-  # magenta = '#C061CB'
-  # cyan    = '#286983'
-  # white   = '#edecee'
+  red     = '#F09483'
+  green   = '#61ffca'
+  yellow  = '#EA9D34'
+  blue    = '#2A7BDE'
+  magenta = '#C061CB'
+  cyan    = '#286983'
+  white   = '#edecee'
 
   [colors.dim]
   black   = '#5E5C64'
-  # red     = '#F09483'
-  # green   = '#61ffca'
+  red     = '#F09483'
+  green   = '#61ffca'
   yellow  = '#9B7054'
-  # blue    = '#2A7BDE'
-  # magenta = '#C061CB'
-  # cyan    = '#286983'
-  # white   = '#edecee'
+  blue    = '#2A7BDE'
+  magenta = '#C061CB'
+  cyan    = '#286983'
+  white   = '#edecee'
 
 
 [cursor]

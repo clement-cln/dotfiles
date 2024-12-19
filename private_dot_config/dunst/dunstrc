@@ -2,7 +2,7 @@
     monitor = eDP-1
     follow = none
     width = 400
-    height = 145
+    height = (0, 300)
     origin = top-right
     alignment = "left"
     vertical_alignment = "center"
@@ -11,6 +11,8 @@
     padding = 15
     horizontal_padding = 15
     text_icon_padding = 15
+    icon_theme = "gnome-icon-theme"
+    enable_recursive_icon_lookup = true
     icon_position = "left"
     min_icon_size = 48
     max_icon_size = 64
@@ -33,7 +35,7 @@
     show_age_threshold = 60 
     markup = "full" 
     font = "Cantarell 10" 
-    format = "<b>%s</b>\n%b: 
+    format = "<b>%s</b>\n%b"
     word_wrap = "yes" 
     sort = "yes" 
     shrink = "no" 

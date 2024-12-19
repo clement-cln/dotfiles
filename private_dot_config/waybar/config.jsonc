@@ -61,7 +61,7 @@
   },
   "clock": {
     "timezone": "Europe/Paris",
-    "format": "{:%H:%M}",
+    "format": "{:%a %b %d %H:%M}",
     "format-alt": "󰃭  {:%Y-%m-%d}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -175,7 +175,8 @@
     "tooltip-format": "{essid} ({signalStrength}%)\n{bandwidthUpOctets}  {bandwidthDownOctets}\n{ifname} via {gwaddr} 󱂇",
     "format-linked": "{ifname} (No IP) 󱦂",
     "format-disconnected": "󰤭",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "format-alt": "<span size='small'></span> {bandwidthUpOctets}  <span size='small'></span> {bandwidthDownOctets}",
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "max-length": 50
   },
