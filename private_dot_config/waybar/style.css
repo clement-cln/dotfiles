@@ -174,12 +174,14 @@ label:focus {
   background-color: #66cc99;
 }
 
-#pulseaudio.muted {
-  background-color: #111111;
-}
 #pulseaudio.source-muted {
   color: #e95378;
 }
+#pulseaudio.muted {
+  background-color: #e95378;
+  color: #f2e9e1;
+}
+
 
 /* Network */
 #network.disconnected {

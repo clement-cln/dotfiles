@@ -148,23 +148,23 @@
   },
   "privacy": {
     "icon-spacing": 4,
-    "icon-size": 18,
+    "icon-size": 12,
     "transition-duration": 250,
     "modules": [
       {
         "type": "screenshare",
         "tooltip": true,
-        "tooltip-icon-size": 24
+        "tooltip-icon-size": 20
       },
       {
         "type": "audio-out",
         "tooltip": true,
-        "tooltip-icon-size": 24
+        "tooltip-icon-size": 20
       },
       {
         "type": "audio-in",
         "tooltip": true,
-        "tooltip-icon-size": 24
+        "tooltip-icon-size": 20
       }
     ]
   },
@@ -198,8 +198,8 @@
   "pulseaudio": {
     "format": "<span size='small'>{format_source}</span>",
     "format-bluetooth": "<span size='small'>{icon} {format_source}</span>",
-    "format-bluetooth-muted": "{icon} {format_source}",
-    "format-muted": "",
+    "format-bluetooth-muted": "<span size='small'>{icon} {format_source}</span>",
+    "format-muted": "<span size='small'>{format_source}</span>",
     "format-source": "",
     "format-source-muted": "",
     "format-icons": {
@@ -212,7 +212,7 @@
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol",
-    "tooltip": true
+    "tooltip": false
   },
   "custom/media": {
     "format": "{icon} {}",
