@@ -6,8 +6,7 @@
 
 /* Waybar */
 window#waybar {
-  background-color: #0b0c0f;
-  opacity: 0.8;
+  background-color: alpha(#0b0c0f, 0.8); /* Don't use opacity see: https://github.com/Alexays/Waybar/issues/3492#issuecomment-2381894272 */
   /* background-color: rgba(24, 27, 32, 0.5); */
   color: #f2e9e1;
   transition-property: background-color;
@@ -20,11 +19,11 @@ window#waybar.hidden {
 }
 
 window#waybar.termite {
-  background-color: #3f3f3f;
+  background-color: alpha( #3f3f3f, 0.8);
 }
 
 window#waybar.chromium {
-  background-color: #0b0c0f;
+  background-color: alpha( #0b0c0f, 0.8);
   border: none;
 }
 
@@ -46,11 +45,11 @@ button:hover {
 /* Workspaces */
 #workspaces button {
   padding: 0 5px;
-  background-color: transparent;
+  background-color: alpha( transparent, 0.8);
   color: #f2e9e1;
 }
 #workspaces button.urgent {
-  background-color: #e95378;
+  background-color: alpha( #e95378, 0.8);
 }
 
 /* Commons */
@@ -99,13 +98,13 @@ button:hover {
 
 /* Disk */
 #disk.warning {
-  background-color: #f09483;
+  background-color: alpha( #f09483, 0.8);
 }
 
 /* Temperature */
 #temperature.critical,
 #disk.critical {
-  background-color: #e95378;
+  background-color: alpha( #e95378, 0.8);
 }
 
 /* Battery */
@@ -116,7 +115,7 @@ button:hover {
 }
 #battery.charging {
   color: #f2e9e1;
-  background-color: #1ea071;
+  background-color: alpha( #1ea071, 0.8);
 }
 
 @keyframes blink {
@@ -128,10 +127,10 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.warning:not(.charging) {
-  background-color: #f09483;
+  background-color: alpha( #f09483, 0.8);
 }
 #battery.critical:not(.charging) {
-  background-color: #e95378;
+  background-color: alpha( #e95378, 0.8);
   color: #f2e9e1;
   animation-name: blink;
   animation-duration: 0.5s;
@@ -142,14 +141,14 @@ button:hover {
 
 /* Power profiles */
 #power-profiles-daemon.performance {
-  background-color: #e95378;
+  background-color: alpha( #f09483, 0.9);
 }
 #power-profiles-daemon.power-saver {
-  background-color: #1ea071;
+  background-color: alpha( #1ea071, 0.8);
 }
 
 label:focus {
-  background-color: #0b0c0f;
+  background-color: alpha( #0b0c0f, 0.8);
 }
 
 /* Pulseaudio */
@@ -167,38 +166,38 @@ label:focus {
 }
 #pulseaudio-slider trough {
   min-width: 10px;
-  background-color: #0b0c0f;
+  background-color: alpha( #0b0c0f, 0.4);
 }
 #pulseaudio-slider highlight {
   min-width: 10px;
-  background-color: #66cc99;
+  background-color: alpha( #66cc99, 0.8);
 }
 
 #pulseaudio.source-muted {
-  color: #e95378;
+  color: #E95678;
 }
 #pulseaudio.muted {
-  background-color: #e95378;
+  background-color: alpha( #25B0BC, 0.8);
   color: #f2e9e1;
 }
 
 
 /* Network */
 #network.disconnected {
-  background-color: #e95378;
+  background-color: alpha( #e95378, 0.8);
 }
 
 /* Custom */
 #custom-media {
-  background-color: #66cc99;
+  background-color: alpha( #66cc99, 0.8);
   color: #2a5c45;
   min-width: 100px;
 }
 #custom-media.custom-spotify {
-  background-color: #66cc99;
+  background-color: alpha( #66cc99, 0.8);
 }
 #custom-media.custom-vlc {
-  background-color: #ffa000;
+  background-color: alpha( #ffa000, 0.8);
 }
 
 /* Privacy */
@@ -210,13 +209,13 @@ label:focus {
   color: white;
 }
 #privacy-item.screenshare {
-  background-color: #f6c177;
+  background-color: alpha( #f6c177, 0.8);
 }
 #privacy-item.audio-in {
-  background-color: #1ea071;
+  background-color: alpha( #1ea071, 0.8);
 }
 #privacy-item.audio-out {
-  background-color: #3e8fb0;
+  background-color: alpha( #3e8fb0, 0.8);
 }
 
 /* Docker */
