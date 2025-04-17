@@ -1,5 +1,9 @@
-killall waybar; nohup waybar >/dev/null 2>&1 &
+#!/bin/bash 
+
+killall hyperpaper hyperidle waybar
+
+hyprctl dispatch exec hyprpaper 
+hyprctl dispatch exec hypridle 
+hyprctl dispatch exec waybar
 
 hyprctl reload
-
-killall hyprpaper; nohup hyprpaper >/dev/null 2>&1 &

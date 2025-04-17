@@ -1,6 +1,3 @@
-# ----------------------------------- gtk ----------------------------------- #
-export GTK_THEME=Adwaita-dark # Add the following to /etc/environment without the export statement if dark theme is not enforced
-
 # --------------------------------- antigen --------------------------------- #
 # Activate antigen
 source $HOME/.antigen/antigen.zsh
@@ -41,14 +38,8 @@ antigen apply
 # Starship
 eval "$(starship init zsh)"
 
-# nvm
-source /usr/share/nvm/init-nvm.sh
-
-# Yarn global bin
-export PATH="$(yarn global bin):$PATH"
-
-# User local bin folder
-export PATH="$PATH:$HOME/.local/bin"
+# fnm
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive --shell zsh)"
 
 # I'm so clumsy
 alias celar="echo door"
@@ -66,9 +57,6 @@ function open(){
 }
 
 # ------------------------------- kubernetes -------------------------------- #
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export KUBE_EDITOR='code --wait'
-
 alias k="kubectl"
 alias kctx="kubectx"
 
@@ -135,6 +123,17 @@ function git-remove-untracked(){
     esac
 
     git-list-untracked | xargs git branch $git_branch_arg
+}
+
+function glab-export-env(){
+    case $1 in
+    --help | -h)
+        glab variable export --help
+        ;;
+    *)
+    esac
+
+    glab variable export "$@" | jq -r '.[] | "\(.key)=\"\(.value)\""' 1> .env
 }
 
 # ---------------------------------- local ---------------------------------- #

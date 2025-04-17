@@ -1,0 +1,15 @@
+# gtk 
+export GTK_THEME=Adwaita-dark # Add the following to /etc/environment without the export statement if dark theme is not enforced
+
+# User local bin folder
+path=($HOME/.local/bin $path)
+
+# Yarn global bin
+path=($(yarn global bin) $path)
+
+# Cargo global bin
+path+=$HOME/.cargo/bin
+
+# Kubernetes
+path=(${KREW_ROOT:-$HOME/.krew}/bin $path)
+export KUBE_EDITOR='code --wait'
