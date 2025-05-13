@@ -11,7 +11,7 @@
     padding = 15
     horizontal_padding = 15
     text_icon_padding = 15
-    icon_theme = "gnome-icon-theme"
+    icon_theme = "Adwaita"
     enable_recursive_icon_lookup = true
     icon_position = "left"
     min_icon_size = 48
