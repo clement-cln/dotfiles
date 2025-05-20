@@ -7,3 +7,5 @@ hyprctl dispatch exec hypridle
 hyprctl dispatch exec waybar
 
 hyprctl reload
+
+hyprpm reload
