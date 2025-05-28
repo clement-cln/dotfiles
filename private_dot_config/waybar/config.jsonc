@@ -54,7 +54,7 @@
       "9": "9",
       "0": "0",
       "urgent": "<span size='x-small'></span>",
-      "active": "<span size='x-small'></span>",
+      "active": "<span size='small'>🗿</span>",
       "special": "<span size='x-large'>󰽷</span>"
     },
     "show-special": true
