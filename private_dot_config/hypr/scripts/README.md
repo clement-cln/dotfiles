@@ -14,3 +14,14 @@ The script handles a few presets to easily replace the default DE keybinds:
 
 ## 🎧 Player
 Uses [altdesktop/playerctl](https://github.com/altdesktop/playerctl) to handle player instructions
+
+## 💧 Hyprland
+Hyprland script utilties
+
+```bash
+# e.g to make them available from the $PATH
+ln -s ~/.config/hypr/scripts/hypreload.sh  ~/.local/bin/hypreload
+```
+
+- `hypreload.sh`: reloads the hyprland environment and other software layers
+- `hyprestartlock`: restarts hyprlock when it crashes  
