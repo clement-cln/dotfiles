@@ -3,6 +3,15 @@ format = '$os$all$kubernetes$cmd_duration$line_break$character'
 [aws]
 symbol = "  "
 
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '🔌 '
+discharging_symbol = '💀 '
+
+[[battery.display]]
+threshold = 30
+style = 'bold bright-black'
+
 [buf]
 symbol = " "
 
