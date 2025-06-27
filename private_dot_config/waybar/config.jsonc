@@ -12,9 +12,9 @@
   "modules-left": [
     "custom/logo",
     "hyprland/workspaces",
-    "custom/media",
     "custom/docker",
-    "custom/kubernetes"
+    "custom/kubernetes",
+    "mpris"
   ],
   "modules-center": ["clock"],
   "modules-right": [
@@ -214,17 +214,17 @@
     "on-click": "pavucontrol",
     "tooltip": false
   },
-  "custom/media": {
-    "format": "{icon} {}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "Spotify": "",
-      "default": "🎜"
+  "mpris": {
+    "format": "<span size='small'>{player_icon}</span> {title} - {artist}",
+    "format-paused": "<span size='small'>{status_icon}</span> {title} - {artist}",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵",
+      "firefox": "󰺕"
     },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/custom/mediaplayer.py 2> /dev/null"
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    "status-icons": {
+      "paused": "󱖒"
+    }
   },
   "custom/kubernetes": {
     "interval": 1,

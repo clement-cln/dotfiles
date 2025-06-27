@@ -54,7 +54,7 @@ button:hover {
 
 /* Commons */
 #hyprland-workspaces,
-#custom-media,
+#mpris,
 #clock,
 #network,
 #cpu,
@@ -187,18 +187,15 @@ label:focus {
   background-color: alpha( #e95378, 0.8);
 }
 
-/* Custom */
-#custom-media {
-  background-color: alpha( #66cc99, 0.8);
-  color: #2a5c45;
+/* Player info */
+#mpris {
+  padding-left: 40px;
   min-width: 100px;
 }
-#custom-media.custom-spotify {
-  background-color: alpha( #66cc99, 0.8);
+#mpris.paused {
+  color: alpha( #f2e9e1, 0.4);
 }
-#custom-media.custom-vlc {
-  background-color: alpha( #ffa000, 0.8);
-}
+
 
 /* Privacy */
 #privacy {
