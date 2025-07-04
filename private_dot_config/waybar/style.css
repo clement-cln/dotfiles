@@ -193,7 +193,7 @@ label:focus {
   min-width: 100px;
 }
 #mpris.paused {
-  color: alpha( #f2e9e1, 0.4);
+  color: alpha( #eeeeee, 0.4);
 }
 
 

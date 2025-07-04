@@ -57,7 +57,8 @@ function open(){
 }
 
 # ------------------------------- kubernetes -------------------------------- #
-alias k="kubectl"
+compdef kubecolor=kubectl
+alias k="kubecolor"
 alias kctx="kubectx"
 
 # --------------------------------- python ---------------------------------- #

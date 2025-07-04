@@ -103,7 +103,7 @@
       "warning": 80,
       "critical": 90
     },
-    "format": "󰋊 {specific_free:0.1f}GB",
+    "format": "<span size='small'></span> {specific_free:0.1f}GB",
     "unit": "GB",
     "tooltip": true
   },
@@ -196,12 +196,12 @@
     "orientation": "vertical"
   },
   "pulseaudio": {
-    "format": "<span size='small'>{format_source}</span>",
-    "format-bluetooth": "<span size='small'>{icon} {format_source}</span>",
-    "format-bluetooth-muted": "<span size='small'>{icon} {format_source}</span>",
-    "format-muted": "<span size='small'>{format_source}</span>",
-    "format-source": "",
-    "format-source-muted": "",
+    "format": "<span size='medium'>{format_source}</span>",
+    "format-bluetooth": "<span size='medium'>{format_source}</span>",
+    "format-bluetooth-muted": "<span size='medium'>{format_source}</span>",
+    "format-muted": "<span size='medium'>{format_source}</span>",
+    "format-source": "󰍬",
+    "format-source-muted": "󰍭",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
