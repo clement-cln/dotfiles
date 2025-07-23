@@ -23,8 +23,9 @@
     "disk",
     "temperature",
     "privacy",
-    "pulseaudio/slider",
+    // "pulseaudio/slider",
     "pulseaudio",
+    "wireplumber",
     "bluetooth",
     "network",
     "backlight",
@@ -32,7 +33,7 @@
     "battery"
   ],
   "custom/logo": {
-    "format": "",
+    "format": "",
     "tooltip": false,
     "on-click": "killall nwg-bar || nwg-bar"
   },
@@ -84,7 +85,7 @@
       "warning": 80,
       "critical": 90
     },
-    "format": "<span size='small'></span> {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}",
+    "format": "<span size='small'></span> {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}{icon12}{icon13}{icon14}{icon15}",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     "tooltip": true
   },
@@ -190,10 +191,14 @@
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     "on-click": "kill blueberry && blueberry"
   },
-  "pulseaudio/slider": {
-    "min": 0,
-    "max": 100,
-    "orientation": "vertical"
+  "wireplumber": {
+    "format": "<span size='large'>{icon}</span>",
+    "format-muted": "<span size='large'>󰕿</span>",
+    "on-click": "helvum",
+    "format-icons": ["󰕿", "󰖀", "󰕾"],
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
+    "max-volume": 100
   },
   "pulseaudio": {
     "format": "<span size='medium'>{format_source}</span>",
@@ -211,7 +216,6 @@
       "car": "",
       "default": ["", "", ""]
     },
-    "on-click": "pavucontrol",
     "tooltip": false
   },
   "mpris": {

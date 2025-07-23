@@ -67,8 +67,8 @@ ahead = '⇡${count}'
 behind = '⇣${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
 stashed = "🎒"
-modified = "ᝰ"
-deleted = '🗑️'
+modified = "🔧"
+deleted = "🗑️ "
 
 [golang]
 symbol = " "
@@ -130,7 +130,7 @@ symbol = " "
 
 [os]
 format = "[$symbol]($style) "
-style = "red"
+style = "cyan"
 disabled = false
 
 [os.symbols]
@@ -139,23 +139,14 @@ Alpine = " "
 AlmaLinux = " "
 Amazon = " "
 Android = " "
-Arch = " "
+# Arch = " "
+Arch = "🌊"
 Artix = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
 Emscripten = " "
-#EndeavourOS = " "
-# EndeavourOS = "🪼"
-# EndeavourOS = " "
-# EndeavourOS = ""
-# EndeavourOS = "󱥒"
-# EndeavourOS = ""
-# EndeavourOS = "󰆦"
-# EndeavourOS = "🪷"
-# EndeavourOS = "🐙"
-EndeavourOS = "🌊"
-# EndeavourOS = "󰀶"
+EndeavourOS = ""
 Fedora = " "
 FreeBSD = " "
 Garuda = "󰛓 "

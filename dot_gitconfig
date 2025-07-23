@@ -13,3 +13,7 @@
   cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [alias]
   gud = help
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true

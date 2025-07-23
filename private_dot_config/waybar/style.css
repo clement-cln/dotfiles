@@ -63,6 +63,7 @@ button:hover {
 #temperature,
 #privacy,
 #pulseaudio,
+#wireplumber,
 #bluetooth,
 #backlight,
 #power-profiles-daemon,
@@ -87,13 +88,13 @@ button:hover {
   margin-right: 0;
 }
 
-/* Endeavour */
+/* Arch */
 #custom-logo {
   padding-right: 7px;
   padding-left: 7px;
   margin-left: 5px;
   border-radius: 8px 0px 0px 8px;
-  color: #c4a7e7;
+  color: #3e8fb0;
 }
 
 /* Disk */
@@ -152,7 +153,7 @@ label:focus {
 }
 
 /* Pulseaudio */
-#pulseaudio-slider {
+/* #pulseaudio-slider {
   border-radius: 4px;
   padding: 5px 0 5px 10px;
 }
@@ -173,14 +174,18 @@ label:focus {
   background-color: alpha( #66cc99, 0.8);
 }
 
-#pulseaudio.source-muted {
-  color: #E95678;
-}
 #pulseaudio.muted {
   background-color: alpha( #25B0BC, 0.8);
   color: #f2e9e1;
+  } */
+#pulseaudio.source-muted {
+  background-color: alpha( #f6c177, 0.8)
 }
-
+  
+#wireplumber.muted {
+  background-color: alpha( #25B0BC, 0.8);
+  color: #f2e9e1;
+}
 
 /* Network */
 #network.disconnected {
